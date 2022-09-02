@@ -45,5 +45,10 @@ git log
 [] Git log retorna un `id` con este id vamos a poder ver el detalle de los cambios que se hicieron
 
 ```bash
-git log
+Git remote - v
 ```
+* visualiza la ruta del porta
+```bash
+Git push origin main
+```
+* carga la info al portal
