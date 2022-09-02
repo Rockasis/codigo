@@ -24,7 +24,26 @@ git init
 ```
 * para ver el estado de nuestros cambios
 
-
 ```bash
 git Status
+```
+*Agrega los Archivos a la mmemoria de la pc
+
+```bashel detalle
+git add
+```
+* Crear el registro de los cambios realizados
+
+```bash
+git ommit -m "comentario"
+```
+*
+```bash
+git log
+```
+*Poder ver historial de commits
+[] Git log retorna un `id` con este id vamos a poder ver el detalle de los cambios que se hicieron
+
+```bash
+git log
 ```
