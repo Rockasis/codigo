@@ -1,0 +1,619 @@
+
+ALFREDO@SISTEMASR MINGW64 ~
+$ git --version
+git version 2.37.2.windows.2
+
+ALFREDO@SISTEMASR MINGW64 ~
+$ git config --global user.email "alfredo.rocca22@gmail.com"
+
+ALFREDO@SISTEMASR MINGW64 ~
+$ git vonfig --list
+git: 'vonfig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+ALFREDO@SISTEMASR MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.editor="C:\Users\ALFREDO\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.email=alfredo.rocca22@gmail.com
+
+ALFREDO@SISTEMASR MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.editor="C:\Users\ALFREDO\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.email=alfredo.rocca22@gmail.com
+
+ALFREDO@SISTEMASR MINGW64 ~
+$ cd d:
+
+ALFREDO@SISTEMASR MINGW64 /d
+$ cd d
+bash: cd: d: No such file or directory
+
+ALFREDO@SISTEMASR MINGW64 /d
+$ d:
+bash: d:: command not found
+
+ALFREDO@SISTEMASR MINGW64 /d
+$ cd d
+bash: cd: d: No such file or directory
+
+ALFREDO@SISTEMASR MINGW64 /d
+$ cd d:\codigo
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo
+$ pwd
+/d/codigo
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo
+$ touch read.md
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo
+$ touch READ.md
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo
+$ touch READ.md
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo
+$ git init
+Initialized empty Git repository in D:/codigo/.git/
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ ls -a
+./  ../  .git/  READ.md
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git add .
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ it status
+bash: it: command not found
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   READ.md
+
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   READ.md
+
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   READ.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   READ.md
+
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git add .
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   READ.md
+
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git commit -m "creando mi primer commit"
+[master (root-commit) 314f8f5] creando mi primer commit
+ 1 file changed, 30 insertions(+)
+ create mode 100644 READ.md
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git log
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ ^C
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git show 314f8f542cb092ed6599572cdb5a000fae6296db
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
+:...skipping...
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
+:...skipping...
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
++
++```bash
++git init
++```
++* para ver el estado de nuestros cambios
++
++
++```bash
++git Status
++```
+~
+~
+~
+~
+(END)...skipping...
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
++
++```bash
++git init
++```
++* para ver el estado de nuestros cambios
++
++
++```bash
++git Status
++```
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
++
++```bash
++git init
++```
++* para ver el estado de nuestros cambios
++
++
++```bash
++git Status
++```
+...skipping...
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
++
++```bash
++git init
++```
++* para ver el estado de nuestros cambios
++
++
++```bash
++git Status
++```
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git commit -m "agregando 2do commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   READ.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git show
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
++
++```bash
++git init
++```
++* para ver el estado de nuestros cambios
++
++
++```bash
++git Status
++```
+(END)...skipping...
+commit 314f8f542cb092ed6599572cdb5a000fae6296db (HEAD -> master)
+Author: unknown <alfredo.rocca22@gmail.com>
+Date:   Thu Sep 1 21:43:30 2022 -0500
+
+    creando mi primer commit
+
+diff --git a/READ.md b/READ.md
+new file mode 100644
+index 0000000..32dc5e1
+--- /dev/null
++++ b/READ.md
+@@ -0,0 +1,30 @@
++# Primer dia con Git/Github
++
++Lista de comando de git
++
++Comamndo para configurar el usuario y correo
++```bash
++git --version
++```
++* para poder configurar el correo
++
++```bash
++git --global user.email"email"
++```
++* Para poder configurar el username
++
++```bash
++git config  --global use
++rname
++```
++* esto se usa una vez por carpeta
++
++```bash
++git init
++```
++* para ver el estado de nuestros cambios
++
++
++```bash
++git Status
++```
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (master)
+$ git branch -M main
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git add .
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git commit -m "cambio de nombre"
+[main b39b412] cambio de nombre
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+ rename READ.md => README.md (54%)
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git remote add origin https://github.com/Rockasis/codigo.git
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git remote -v
+origin  https://github.com/Rockasis/codigo.git (fetch)
+origin  https://github.com/Rockasis/codigo.git (push)
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 784 bytes | 784.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Rockasis/codigo.git
+ * [new branch]      main -> main
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git add .
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ commit -m "nuevo comentario"
+bash: commit: command not found
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git commit -m "nuevo comentario"
+[main 06cda2c] nuevo comentario
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 366 bytes | 366.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Rockasis/codigo.git
+   b39b412..06cda2c  main -> main
+
+ALFREDO@SISTEMASR MINGW64 /d/codigo (main)
