@@ -6,15 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <!-- Agregamos la etiqueta style -->
+  <!-- va a permitir escribir css y dar estilos a nuestros elementos -->
+  <style>
+    body {
+      font-family: Arial;
+      text-align: -webkit-center;
+    }
+
+    table {
+      border: solid;
+    }
+
+    h1 {
+      color: rgb(4, 95, 253);
+    }
+
+    td {
+      background-color: aqua;
+    }
+  </style>
   <body>
     <h1>Tablas</h1>
     <!-- Estructura correcta -->
-    <table border="1" bgcolor = "33FF5B">
+    <!-- background color (color de fondo) -->
+    <!-- puede ser hexadecimal -->
+    <!-- puede ser en ingles -->
+    <!-- puedeser hsl - rgb - rgba -->
+    <table>
       <thead>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Correo</th>
-        <th>Celular</th>
+        <!-- es buenas practica que mis elementos th esten dentro un tr -->
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo</th>
+          <th>Celular</th>
+        </tr>
       </thead>
       <tbody>
         <tr>

@@ -1,14 +1,12 @@
-* {
+* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Mobile first */
 body {
   background-color: blue;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -16,7 +14,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
 .left-image {
   background: url("../images/image-product-desktop.jpg");
   background-size: cover;
@@ -28,7 +25,6 @@ body {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-
 .content {
   width: 300px;
   background-color: #fff;
@@ -36,7 +32,6 @@ body {
   border-bottom-right-radius: 8px;
   padding: 20px;
 }
-
 .sub-title {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
@@ -44,13 +39,11 @@ body {
   font-weight: 500;
   letter-spacing: 4px;
 }
-
 .title {
   color: hsl(212, 21%, 14%);
   font-family: "Fraunces", sans-serif;
   margin-top: 15px;
 }
-
 .text-content {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
@@ -59,18 +52,15 @@ body {
   font-size: 13px;
   font-weight: 500;
 }
-
 .content-price {
   display: flex;
   align-items: center;
 }
-
 .offert-price {
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", sans-serif;
   font-weight: 700;
 }
-
 .real-price {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
@@ -97,11 +87,9 @@ button {
   align-items: center;
   gap: 15px;
 }
-
 button:hover {
   cursor: pointer;
 }
-
 /* MD */
 @media (min-width: 600px) {
   body {
@@ -132,7 +120,6 @@ button:hover {
     padding: 20px;
   }
 }
-
 /* LG */
 @media (min-width: 900px) {
   body {
@@ -160,15 +147,18 @@ button:hover {
   }
 
   button {
+    margin-top: 30px;
+    padding: 20px;
     margin-top: 10px;
     padding: 10px;
     font-size: 20px;
   }
 
   .content-price {
+    margin-top: 30px;
     margin-top: 10px;
   }
-  
+
   .offert-price {
     font-size: 40px;
     font-weight: 800;
@@ -192,4 +182,3 @@ button:hover {
     display: none;
   }
 }
-F
