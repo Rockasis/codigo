@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { TaskForm, TaskCard } from "./components";
-import { get, post, update } from "./services";
+import { TaskForm, TaskCard } from "../../components";
+import { get, post, update } from "../../services";
 
-function App() {
+function Home() {
   const [taskList, setTaskList] = useState([]);
 
   async function getTasks() {
@@ -48,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

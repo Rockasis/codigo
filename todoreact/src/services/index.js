@@ -1,4 +1,4 @@
-const url = "https://63645b008a3337d9a2f5dd45.mockapi.io/tareasgit";
+const url = "https://63645b008a3337d9a2f5dd45.mockapi.io/tareas";
 
 // GET : Listar
 // POST: Crear
@@ -40,6 +40,22 @@ export const update = async (id, body) => {
         "Content-type": "application/json",
       },
       body: JSON.stringify(body),
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// Para la eliminar un registro unicamente necesito el id
+export const destroy = async (id) => {
+  try {
+    const response = await fetch(`${url}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
     });
     const data = await response.json();
     return data;
